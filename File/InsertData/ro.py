@@ -4,7 +4,7 @@ import pymysql
 db = pymysql.connect(host='your_host', user='your_name', password='your_passworld', db='Fmd',port=3306)
 # 需自行修改上方信息
 sur = db.cursor()
-with (open('./rockyou.txt', 'r',encoding='utf-8',errors="ignore") as f):
+with (open('.\Dt\10w字典.txt', 'r',encoding='utf-8',errors="ignore") as f):
 
 
     for il in f:
