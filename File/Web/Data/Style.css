@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+}
+
+/*#bar{*/
+/*    position: absolute;*/
+/*    transform: translate(-50%,-50%);*/
+/*    width: 40px;*/
+/*    height: 40px;*/
+/*    background: #f54ea2;*/
+/*    left: 3%;*/
+/*    top: 3%;*/
+/*    border-radius: 50%;*/
+/*}*/
+
+
+#title {
+    position: absolute;
+    transform: translate(-50%, -50%) rotateZ(20deg);
+    top: 50%;
+    left: 50%;
+    font-size: 2000%;
+    color: rgba(255, 198, 198, 0.36);
+    user-select: none;
+}
+
+#bt {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 25%;
+    left: 50%;
+    color: #ffacac;
+    user-select: none;
+}
+
+#sr {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 35%;
+    left: 50%;
+    background: rgb(255, 183, 197);
+    border-style: none;
+    height: 40px;
+    width: 50%;
+    border-radius: 90px;
+    user-select: none;
+    outline: none;
+    text-indent: 20px;
+    box-shadow: rgba(41, 41, 41, 0.39) 10px 10px 9px 3px;
+    color: white;
+}
+
+#btn {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    background: linear-gradient(135deg, #f54ea2, #ff7676);
+    width: 120px;
+    height: 40px;
+    border-style: none;
+    outline: none;
+    border-radius: 90px;
+    color: white;
+}
+
+#sc{
+    position: absolute;
+    transform: translate(-50%,0%);
+    top: 65%;
+    left: 50%;
+    width: 50%;
+    height: 20%;
+    background: #ffc9c9;
+    border-radius: 10px;
+
+}
+#tp{
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    background: #ff7171;
+    border-radius: 10px;
+    text-indent: 10px;
+    color: white;
+    line-height: 200%;
+}
+#st{
+    position: absolute;
+    top: 21%;
+    width: 100%;
+    height: 80%;
+    text-indent: 10px;
+    color: white;
+}
+
+ #load {
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     background: #ffacac;
+     z-index: 100;
+ }
+
+#LodText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotateZ(0deg);
+    z-index: 101;
+    color: aliceblue;
+    animation: LoA 0.3s infinite linear;
+}
+
+#LodText_one {
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 60%;
+    left: 50%;
+    z-index: 101;
+    font-weight: lighter;
+    color: aliceblue;
+}
+
+@keyframes LoA {
+    0% {
+        transform: translate(-50%, -50%) rotateZ(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotateZ(360deg);
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+    #title {
+        position: absolute;
+        transform: translate(-50%, -50%) rotateZ(20deg);
+        top: 50%;
+        left: 50%;
+        font-size: 400%;
+        color: rgba(255, 198, 198, 0.36);
+        user-select: none;
+    }
+    #sr {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 35%;
+        left: 50%;
+        background: rgb(255, 183, 197);
+        border-style: none;
+        height: 40px;
+        width: 80%;
+        border-radius: 90px;
+        user-select: none;
+        outline: none;
+        text-indent: 20px;
+        box-shadow: rgba(41, 41, 41, 0.39) 10px 10px 9px 3px;
+        color: white;
+    }
+
+
+    #sc{
+        position: absolute;
+        transform: translate(-50%,0%);
+        top: 65%;
+        left: 50%;
+        width: 80%;
+        height: 20%;
+        background: #ffc9c9;
+        border-radius: 10px;
+
+    }
+    #tp{
+        position: absolute;
+        width: 100%;
+        height: 20%;
+        background: #ff7171;
+        border-radius: 10px;
+        text-indent: 10px;
+        color: white;
+        line-height: 200%;
+        font-weight: lighter;
+    }
+    #st{
+        position: absolute;
+        top: 21%;
+        width: 100%;
+        height: 80%;
+        text-indent: 10px;
+        color: white;
+        font-weight: lighter;
+    }
+    #load {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #ffacac;
+        z-index: 100;
+        /*display: none;*/
+    }
+
+}
